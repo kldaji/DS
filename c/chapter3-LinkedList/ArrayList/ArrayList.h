@@ -7,17 +7,25 @@
 #define TRUE 1
 #define FALSE 0
 
+// Fixed Size
 #define LIST_LEN 100
 
-// ListMain.c
+/*
+** ListMain.c
+*/
 // typedef int LData;
 
-// PointListMain.c
+/*
+** PointListMain.c
+*/
 // typedef Point *LData;
 
-// NameCardListMain.c
+/*
+** NameCardListMain.c
+*/
 typedef NameCard *LData;
 
+// ArrayList Structure
 typedef struct __ArrayList
 {
     LData arr[LIST_LEN];
@@ -25,6 +33,7 @@ typedef struct __ArrayList
     int curPosition;
 } ArrayList;
 
+// Rename
 typedef ArrayList List;
 
 void ListInit(List *plist);

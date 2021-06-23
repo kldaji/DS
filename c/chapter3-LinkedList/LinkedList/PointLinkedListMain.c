@@ -1,9 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "ArrayList.h"
-#include "ArrayList.c"
-#include "Point.h"
-#include "Point.c"
+
+#include "DLinkedList.h"
+#include "DLinkedList.c"
+
+// Absoulte Path
+#include "C:\Users\kim young uk\Desktop\GitHub\DS\c\chapter3-LinkedList\ArrayList\Point.h"
+#include "C:\Users\kim young uk\Desktop\GitHub\DS\c\chapter3-LinkedList\ArrayList\Point.c"
+
+// x ascending order
+int comp(Point *p1, Point *p2)
+{
+    if (p1->xpos < p2->xpos)
+        return 0;
+    else if (p1->xpos == p2->xpos)
+    {
+        if (p1->ypos < p2->ypos)
+            return 0;
+        else
+            return 1;
+    }
+    else
+        return 1;
+}
 
 int main()
 {
